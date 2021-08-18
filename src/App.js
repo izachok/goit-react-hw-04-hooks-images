@@ -23,7 +23,6 @@ export default function App() {
 
   useEffect(() => {
     if (status === Status.NEED_LOADING) {
-      console.log('need loading', Date.now());
       setStatus(Status.PENDING);
 
       fetchImagesByQuery(query, page)
